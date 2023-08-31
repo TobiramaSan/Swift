@@ -1,0 +1,99 @@
+.meet {
+  background: #e2efff;
+  width: 100%;
+}
+
+.meet-cont {
+  width: 90.6%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 31px;
+  padding-bottom: 161px;
+}
+
+.meet-title {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.meet-title h1 {
+  padding-top: 52px;
+  color: #0075ff;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 45.8px; /* 143.125% */
+}
+
+.meet-title p {
+  color: #0d0a0a;
+  font-family: Work Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45.8px; /* 229% */
+}
+
+.meet-body {
+  display: flex;
+  gap: 24.44px;
+  justify-content: space-between;
+}
+/* 
+.image1{
+    position: relative;
+} */
+
+.image1,
+.image2,
+.image3,
+.image4 {
+  position: relative;
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+
+.image1:hover,
+.image2:hover,
+.image3:hover,
+.image4:hover {
+  position: relative;
+  transform: translateY(60px);
+  cursor: pointer;
+}
+
+.name-cont {
+  position: absolute;
+  bottom: 1px;
+  z-index: 1;
+  padding: 0px 0px 10px 10px;
+}
+
+.name-cont .name {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  align-items: flex-start;
+}
+
+.name-cont .name h1 {
+  color: #fff;
+  font-family: Work Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32.848px;
+}
+
+.name-cont .name p {
+  color: #fff;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32.848px;
+}

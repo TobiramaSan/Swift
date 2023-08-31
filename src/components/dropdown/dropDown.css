@@ -1,0 +1,71 @@
+.dropdown {
+  position: absolute;
+
+  /* top: 75px; */
+  /* left: 0px; */
+  z-index: 6;
+  width: 589px;
+
+  border-radius: 10.431px;
+  background: #fff;
+  box-shadow: 0px 0px 27.156070709228516px 0px rgba(0, 0, 0, 0.08);
+
+  width: 44%;
+}
+
+.dropdown-cont {
+  padding: 10.431px 7.823px;
+  align-items: flex-start;
+  gap: 16px;
+  display: flex;
+  width: 100%;
+}
+
+.cont-1,
+.cont-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.drop {
+  display: flex;
+  width: 308.354px;
+  padding: 13.038px;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 5.215px;
+  border-radius: 5.215px;
+  background: #fff;
+}
+
+.drop:hover {
+  background: rgba(13, 97, 208, 0.06);
+}
+
+.drop .title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.608px;
+}
+
+.drop .title h1 {
+  color: var(--black, #1e1e26);
+  font-family: Work Sans;
+  font-size: 9.127px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 154%; /* 14.055px */
+  letter-spacing: -0.091px;
+}
+
+.drop .title p {
+  color: var(--grey, #63636e);
+  font-family: Work Sans;
+  font-size: 7.823px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 154%; /* 12.047px */
+  letter-spacing: -0.078px;
+}

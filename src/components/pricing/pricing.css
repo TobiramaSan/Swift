@@ -1,0 +1,127 @@
+.pricing {
+  width: 100%;
+}
+
+.pricing-cont {
+  padding: 64px 0px 37px 0px;
+  width: 86.25%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing-head h1 {
+  color: #0075ff;
+  font-family: Work Sans;
+  font-size: 41.792px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 59.815px; /* 143.125% */
+}
+
+.pricing-head p {
+  color: #1e2027;
+  text-align: center;
+  font-family: Work Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 150% */
+}
+
+.price-body {
+  display: flex;
+  align-items: flex-start;
+  gap: 37px;
+}
+
+.price-item {
+  width: 399px;
+  height: 696px;
+}
+
+.price-item-img {
+  width: 385.371px;
+  height: 246.833px;
+  flex-shrink: 0;
+}
+
+.price-item-text {
+  width: 396.15px;
+  height: 357.842px;
+  flex-shrink: 0;
+}
+
+.price-item-tile {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.price-item-tile h1 {
+  color: #292d32;
+  text-align: center;
+  font-family: Work Sans;
+  font-size: 31.344px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 57.464px; /* 183.333% */
+}
+
+.price-item-tile span {
+  color: #0075ff;
+  font-family: Work Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 35.262px; /* 110.193% */
+}
+
+.price-item-details {
+  width: 373.35px;
+  height: 131.905px;
+  flex-shrink: 0;
+}
+
+.price-item-details ul {
+  width: 100%;
+  width: 373.35px;
+  height: 131.905px;
+  flex-shrink: 0;
+}
+
+.price-item-details ul li {
+  list-style-type: circle;
+  color: #292d32;
+  font-family: Work Sans;
+  font-size: 16.978px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27.426px; /* 161.538% */
+}
+
+.price-item button {
+  width: 100%;
+  display: flex;
+  padding: 10px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: #0075ff;
+  color: #fff;
+  font-family: Work Sans;
+  font-size: 25.559px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 41.277px;
+  cursor: pointer;
+  border-style: none; /* 127.334% */
+}
