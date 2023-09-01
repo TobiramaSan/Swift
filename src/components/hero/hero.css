@@ -244,11 +244,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 16px;
+    /* gap: 16px; */
   }
 
   .slider-imgs img {
-    width: 20%;
+    width: 83.1921157836914px;
+    height: 118.06441497802734px;
   }
 
   .courses {

@@ -97,3 +97,120 @@
   font-weight: 400;
   line-height: 32.848px;
 }
+
+/* Responsiveness */
+
+@media screen and (max-width: 500px) {
+  .meet {
+    background: #e2efff;
+    width: 100%;
+  }
+
+  .meet-cont {
+    width: 90.6%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 31px;
+    padding-bottom: 91px;
+  }
+
+  .meet-title {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .meet-title h1 {
+    color: #0075ff;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 13.708px; /* 62.31% */
+  }
+
+  .meet-title p {
+    color: #0d0a0a;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 13.708px; /* 137.082% */
+  }
+
+  .meet-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+    gap: 13.877px;
+  }
+  /* 
+  .image1{
+      position: relative;
+  } */
+
+  .image1,
+  .image2,
+  .image3,
+  .image4 {
+    width: 181.782px;
+    height: 308.958px;
+    flex-shrink: 0;
+    position: relative;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+  }
+
+  .image1 img,
+  .image2 img,
+  .image3 img,
+  .image4 img {
+    width: 100%;
+  }
+
+  .image1:hover,
+  .image2:hover,
+  .image3:hover,
+  .image4:hover {
+    position: relative;
+    transform: translateY(60px);
+    cursor: pointer;
+  }
+
+  .name-cont {
+    position: absolute;
+    bottom: 1px;
+    z-index: 1;
+    padding: 0px 0px 10px 10px;
+  }
+
+  .name-cont .name {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    align-items: flex-start;
+  }
+
+  .name-cont .name h1 {
+    color: #fff;
+    font-family: Work Sans;
+    font-size: 11.812px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19.4px; /* 164.239% */
+  }
+
+  .name-cont .name p {
+    color: #fff;
+    font-family: Work Sans;
+    font-size: 9.45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19.4px; /* 205.298% */
+  }
+}
