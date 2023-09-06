@@ -18,7 +18,7 @@ const Header = () => {
     <div className="header">
       <div className={isMobileActive ? "active-mobile" : "header-cont"}>
         <div className="logo-name">
-          <div>
+          <div className="main-image">
             <div className="img">
               <img src={logo} alt="" />
             </div>

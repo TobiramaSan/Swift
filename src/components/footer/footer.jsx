@@ -12,12 +12,14 @@ const Footer = () => {
         <div className="footer-main">
           <div className="swift">
             <div className="logo-name">
-              <div className="img">
-                <img src={logo} alt="" />
-              </div>
-              <div className="name">
-                <h1>Swift</h1>
-                <span>e-Learning</span>
+              <div className="main-image">
+                <div className="img">
+                  <img src={logo} alt="" />
+                </div>
+                <div className="name">
+                  <h1>Swift</h1>
+                  <span>e-Learning</span>
+                </div>
               </div>
             </div>
             <p>Most affordable and friendly E-Learning Platform</p>
