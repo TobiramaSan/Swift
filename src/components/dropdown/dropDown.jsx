@@ -1,4 +1,4 @@
-import React from "react";
+// import React, { useState } from "react";
 import "./dropDown.css";
 import ui from "../../assets/uiux.png";
 import javascript from "../../assets/javascript (1).png";
@@ -7,6 +7,7 @@ import python from "../../assets/python.png";
 import wordpress from "../../assets/wordpress.png";
 
 const DropDown = ({ prop }) => {
+  // const [isMobileDrop, setIsMobileDrop] = useState(false);
   const testArray = [
     {
       link: "/Loan/group-lending-scheme",
