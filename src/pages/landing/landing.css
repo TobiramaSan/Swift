@@ -1,0 +1,40 @@
+.swift {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.logo-name {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-name h1 {
+  color: #004bb0;
+  font-family: Work Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.logo-name span {
+  color: #004bb0;
+  font-family: Work Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.swift p {
+  color: #fff;
+  font-family: Work Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 70%;
+}
