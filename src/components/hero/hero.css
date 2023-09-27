@@ -1,5 +1,6 @@
 .hero {
   width: 100%;
+  overflow-x: hidden;
 }
 
 .hero-cont {
@@ -248,7 +249,8 @@
   }
 
   .slider-imgs img {
-    width: 83.1921157836914px;
+    /* width: 83.1921157836914px; */
+    max-width: fit-content;
     height: 118.06441497802734px;
   }
 
