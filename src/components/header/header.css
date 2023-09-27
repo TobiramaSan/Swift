@@ -182,7 +182,7 @@ form input {
     gap: 4.8px;
   }
 
-  .header-cont .logo-name h1 {
+  .header-cont .logo-name .name h1 {
     color: #004bb0;
     font-family: Work Sans;
     font-size: 14.323px;
@@ -191,7 +191,7 @@ form input {
     line-height: normal;
   }
 
-  .active-mobile .logo-name h1 {
+  .active-mobile .logo-name .name h1 {
     color: #004bb0;
     font-family: Work Sans;
     font-size: 14.323px;
