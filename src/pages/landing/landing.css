@@ -1,4 +1,20 @@
+.landing {
+  width: 100%;
+  display: flex;
+  /* gap: 10%; */
+}
+
+.landing .nav {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20%;
+  background: #004bb0;
+  height: 100vh;
+}
 .swift {
+  padding: 42px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -11,8 +27,14 @@
   gap: 8px;
 }
 
-.logo-name h1 {
-  color: #004bb0;
+.logo-name .main-image {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.logo-name .name h1 {
+  color: #f3f3f3;
   font-family: Work Sans;
   font-size: 24px;
   font-style: normal;
@@ -21,20 +43,167 @@
 }
 
 .logo-name span {
-  color: #004bb0;
+  color: #f3f3f3;
   font-family: Work Sans;
   font-size: 24px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   line-height: normal;
 }
 
-.swift p {
-  color: #fff;
+.squares {
+  position: absolute;
+  top: 85%;
+  width: 100vh;
+  /* height: 100%; */
+}
+
+.squares img {
+  width: 88.303px;
+  /* height: 88.303px; */
+}
+
+.squares .square1 {
+  left: 10px;
+  bottom: -110px;
+  position: absolute;
+}
+
+.squares .square2 {
+  position: absolute;
+  left: -43px;
+  bottom: -100px;
+}
+
+.squares .square3 {
+  bottom: 12px;
+  left: 10px;
+  position: absolute;
+}
+
+.squares .square4 {
+  left: 65px;
+  top: -40px;
+  position: absolute;
+}
+
+.landing-content {
+  padding-top: 70px;
+  margin: 0px auto;
+  display: flex;
+  width: 42%;
+  flex-direction: column;
+  gap: 25px;
+  align-items: flex-start;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  gap: 6.65px;
+}
+.welcome p {
+  color: #292d32;
   font-family: Work Sans;
-  font-size: 20px;
+  font-size: 19.22px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  width: 70%;
+}
+
+.welcome .wave {
+  display: flex;
+  flex-direction: row;
+}
+
+.welcome.wave h1 {
+  color: #292d32;
+  font-family: Work Sans;
+  font-size: 38.44px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.landing-content form {
+  display: flex;
+  flex-direction: column;
+  /* gap: 23px; */
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.landing-content form input {
+  display: flex;
+  padding: 19px 450px 19px 20px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  background: #d9d9d9;
+}
+.landing-content form input::placeholder {
+  color: #191919;
+  font-family: Work Sans;
+  font-size: 16.817px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.agreement-policy {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+}
+
+.input-label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.landing-content .btns {
+  display: flex;
+  flex-direction: column;
+  gap: 10.04px;
+  width: 100%;
+}
+
+.landing-content .btns button {
+  padding: 10px;
+  border-radius: 4px;
+  background: #004bb0;
+  border: none;
+  color: #d9d9d9;
+  text-align: center;
+  font-family: Work Sans;
+  font-size: 18.019px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.landing-content .btns span {
+  align-self: center;
+  padding-top: 20px;
+}
+
+.landing-content .google {
+  display: flex;
+  flex-direction: row;
+  gap: 10.36px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  color: #002979;
+  font-family: Poppins;
+  font-size: 16.383px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 14.3px;
 }
