@@ -1,37 +1,15 @@
 import React from "react";
-import logo from "../../assets/whitelogoo.png";
-import square1 from "../../assets/square1.png";
-import square2 from "../../assets/square2.png";
-import square3 from "../../assets/square3.png";
-import square4 from "../../assets/square4.png";
 import wave from "../../assets/wave.png";
 import google from "../../assets/Google.png";
 import "./landing.css";
+import { NavLink } from "react-router-dom";
+import SideBar from "../../components/sidebar/sidebar";
 
 const Landing = () => {
   return (
     <div className="landing">
-      <div className="nav">
-        <div className="swift">
-          <div className="logo-name">
-            <div className="main-image">
-              <div className="img">
-                <img src={logo} alt="" />
-              </div>
-              <div className="name">
-                <h1>Swift</h1>
-                <span>e-Learning</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="squares">
-          <img className="square1" src={square1} alt="" />
-          <img className="square2" src={square2} alt="" />
-          <img className="square3" src={square3} alt="" />
-          <img className="square4" src={square4} alt="" />
-        </div>
+      <div className="navbar">
+        <SideBar />
       </div>
 
       <div className="landing-content">
@@ -49,7 +27,6 @@ const Landing = () => {
           <input type="text" placeholder="course" /> <br />
           <input type="text" placeholder="email" /> <br />
           <div className="agreement-policy">
-            {" "}
             <div className="input-label">
               <input
                 type="checkbox"
@@ -76,17 +53,23 @@ const Landing = () => {
             </div>
           </div>
           <div className="btns">
-            <button className="start">Get Started</button>
-            <button className="sign">SIgn In</button>
+            <NavLink to="/home">
+              <button className="start">Get Started</button>
+            </NavLink>
+            <NavLink to="/signin">
+              <button className="sign">SIgn In</button>
+            </NavLink>
 
             <span>or</span>
           </div>
         </form>
 
-        <button className="google">
-          <img src={google} alt="" />
-          Continue with Google
-        </button>
+        <NavLink to="">
+          <button className="google">
+            <img src={google} alt="" />
+            Continue with Google
+          </button>
+        </NavLink>
       </div>
     </div>
   );

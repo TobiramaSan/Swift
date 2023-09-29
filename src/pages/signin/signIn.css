@@ -1,13 +1,13 @@
-.landing {
+.signin {
   display: flex;
   height: 100vh;
 }
 
-.landing .navbar {
+.signin .navigation {
   width: 20%;
   position: fixed;
 }
-.landing-content {
+.signin .landing-content {
   padding-top: 70px;
   margin-left: 40%;
   display: flex;
@@ -17,13 +17,13 @@
   align-items: flex-start;
 }
 
-.welcome {
+.signin .welcome {
   display: flex;
   flex-direction: column;
   gap: 6.65px;
   width: 100%;
 }
-.welcome p {
+.signin .welcome p {
   color: #292d32;
   font-family: Work Sans;
   font-size: 19.22px;
@@ -72,12 +72,6 @@
   font-weight: 400;
   line-height: normal;
   width: 100%;
-}
-
-.agreement-policy {
-  display: flex;
-  gap: 24px;
-  flex-direction: column;
 }
 
 .input-label {

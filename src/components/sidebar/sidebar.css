@@ -1,0 +1,82 @@
+.sidebar .nav {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  background: #004bb0;
+  height: 100vh;
+}
+.swift {
+  padding: 42px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.logo-name {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-name .main-image {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.logo-name .name h1 {
+  color: #f3f3f3;
+  font-family: Work Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.logo-name span {
+  color: #f3f3f3;
+  font-family: Work Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.squares {
+  position: absolute;
+  top: 85%;
+  width: 100vh;
+  /* height: 100%; */
+}
+
+.squares img {
+  width: 88.303px;
+  /* height: 88.303px; */
+}
+
+.squares .square1 {
+  left: 10px;
+  bottom: -110px;
+  position: absolute;
+}
+
+.squares .square2 {
+  position: absolute;
+  left: -43px;
+  bottom: -100px;
+}
+
+.squares .square3 {
+  bottom: 12px;
+  left: 10px;
+  position: absolute;
+}
+
+.squares .square4 {
+  left: 65px;
+  top: -40px;
+  position: absolute;
+}
