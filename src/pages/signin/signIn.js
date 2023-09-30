@@ -1,16 +1,54 @@
-import React from "react";
+import React, { useState } from "react";
+import logo from "../../assets/whitelogoo.png";
 import wave from "../../assets/wave.png";
 import google from "../../assets/Google.png";
 import { NavLink } from "react-router-dom";
 import SideBar from "../../components/sidebar/sidebar";
 import "./signIn.css";
 const SignIn = () => {
+  const [isMobileView, setIsMobileView] = useState(false);
+
+  const handleMobileView = () => {
+    if (window.innerwidth <= 500) {
+      setIsMobileView(true);
+    } else {
+      setIsMobileView(false);
+    }
+  };
+  React.useState(() => {
+    window.addEventListener("resize", handleMobileView);
+    handleMobileView();
+
+    // clean up function
+    return () => {
+      window.removeEventListener("resize", handleMobileView);
+    };
+  }, []);
+
   return (
     <div className="signin">
       <div className="navigation">
         <SideBar />
       </div>
-
+      {isMobileView && (
+        <div className="mobile-nav">
+          <div className="nav">
+            <div className="swift">
+              <div className="logo-name">
+                <div className="main-image">
+                  <div className="img">
+                    <img src={logo} alt="" />
+                  </div>
+                  <div className="name">
+                    <h1>Swift</h1>
+                    <span>e-Learning</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
       <div className="landing-content">
         <div className="welcome">
           <div className="wave">

@@ -171,3 +171,248 @@ form .input-label input {
   width: 100%;
   cursor: pointer;
 }
+
+@media screen and (max-width: 500px) {
+  .signin {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .signin .navigation {
+    display: none;
+  }
+
+  .signin .mobile-nav {
+    position: relative;
+    display: flex;
+    background: #004bb0;
+    height: auto;
+  }
+  .signin .mobile-nav .swift {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .signin .mobile-nav .logo-name {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .signin .mobile-nav .logo-name .main-image {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .signin .mobile-nav .logo-name .name h1 {
+    color: #f3f3f3;
+    font-family: Work Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .signin .mobile-nav .logo-name span {
+    color: #f3f3f3;
+    font-family: Work Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .signin .landing-content {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-left: 0px;
+    margin-top: 10px;
+    margin: 0px auto;
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+
+  .welcome {
+    display: flex;
+    flex-direction: column;
+    gap: 6.65px;
+    width: 100%;
+  }
+  .welcome p {
+    color: #292d32;
+    font-family: Work Sans;
+    font-size: 19.22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .welcome .wave {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .welcome .wave h1 {
+    color: #292d32;
+    font-family: Work Sans;
+    font-size: 28.44px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .signin .landing-content form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .signin .landing-content form p {
+    display: flex;
+    align-self: flex-start;
+    color: #292d32;
+    font-family: Work Sans;
+    font-size: 16.817px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .signin .landing-content form input {
+    display: flex;
+    padding: 10px 0px 10px 0px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    background: #d9d9d9;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .signin .landing-content form input::placeholder {
+    padding: 5px;
+    color: #191919;
+    font-family: Work Sans;
+    font-size: 16.817px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    /* width: 100%; */
+  }
+
+  .signin .agreement-policy {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+  }
+
+  .signin .input-label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+  .signin form .input-label input {
+    width: 13px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    background: #d9d9d9;
+    cursor: pointer;
+  }
+
+  .signin .landing-content .btns {
+    display: flex;
+    flex-direction: column;
+    gap: 10.04px;
+    width: 100%;
+  }
+
+  .signin .landing-content .btns button {
+    padding: 10px;
+    border-radius: 4px;
+    background: #004bb0;
+    border: none;
+    color: #d9d9d9;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 8.019px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .signin .landing-content .btns .start {
+    color: #d9d9d9;
+    background: #004bb0;
+  }
+
+  .signin .landing-content .btns .sign {
+    border-radius: 4px;
+    border: 1px solid #004bb0;
+    color: #004bb0;
+    background: #fff;
+  }
+
+  .signin .input-label label {
+    color: #292d32;
+    font-family: Work Sans;
+    font-size: 9.616px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .signin .input-label label span {
+    color: #004bb0;
+    font-family: Work Sans;
+    font-size: 7.415px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .signin .landing-content .btns span {
+    align-self: center;
+    /* padding-top: 20px; */
+  }
+
+  .signin .landing-content a {
+    text-decoration: none;
+    width: 100%;
+  }
+
+  .signin .landing-content button.google {
+    display: flex;
+    flex-direction: row;
+    gap: 10.36px;
+    padding: 10px;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    color: #002979;
+    font-family: Poppins;
+    font-size: 10.383px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 100%;
+    cursor: pointer;
+  }
+}
