@@ -5,16 +5,18 @@ import google from "../../assets/Google.png";
 import { NavLink } from "react-router-dom";
 import SideBar from "../../components/sidebar/sidebar";
 import "./signIn.css";
+import dark from "../../assets/dark-mode.png";
 const SignIn = () => {
   const [isMobileView, setIsMobileView] = useState(false);
 
   const handleMobileView = () => {
-    if (window.innerwidth <= 500) {
+    if (window.innerWidth <= 500) {
       setIsMobileView(true);
     } else {
       setIsMobileView(false);
     }
   };
+
   React.useState(() => {
     window.addEventListener("resize", handleMobileView);
     handleMobileView();
@@ -45,6 +47,9 @@ const SignIn = () => {
                   </div>
                 </div>
               </div>
+            </div>
+            <div className="dark-mode">
+              <img src={dark} alt="dark mode" />
             </div>
           </div>
         </div>

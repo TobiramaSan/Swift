@@ -189,6 +189,18 @@ form .input-label input {
     background: #004bb0;
     height: auto;
   }
+
+  .signin .mobile-nav .nav {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* .signin .mobile-nav .nav .dark-mode {
+    padding-right: 30px;
+  } */
   .signin .mobile-nav .swift {
     padding: 10px;
     display: flex;

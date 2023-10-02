@@ -1,4 +1,39 @@
+:root {
+  --landing-background: #fff
+  --background: #fff;
+  --text-primary: #121314;
+  --text-secondary: #0075ff;
+  --accent: #0075ff;
+  --sub-secondary: #0d0a0a;
+  --prices: #d8d8d8;
+  --testimonial: #fff;
+  --welcome-para: #292d32;
+  --button-text:#D9D9D9;
+  --input-area: #d9d9d9;
+  --sign-in-btn: #fff;
+  --btn-text-color: #d9d9d9;
+  --label-text-color: #292D32;
+}
+
+[data-theme="dark"] {
+  --landing-background: #1b1b1b;
+  --background: #121212;
+  --text-primary: #d8d8d8;
+  --text-secondary: #0867d7;
+  --accent: #0867d7;
+  --sub-secondary: #d8d8d8;
+  --prices: #36383a;
+  --testimonial: #333;
+  --welcome-para:#F3F3F3;
+  --button-text: #fff;
+  --input-area: #fff;
+  --sign-in-btn:#fff;
+  --btn-text-color: #fff;
+  --label-text-color: #F3F3F3;
+}
+
 .landing {
+  background: var(--landing-background);
   display: flex;
   height: 100vh;
 }
@@ -8,6 +43,7 @@
   position: fixed;
 }
 .landing-content {
+ 
   padding-top: 70px;
   margin-left: 40%;
   display: flex;
@@ -24,7 +60,7 @@
   width: 100%;
 }
 .welcome p {
-  color: #292d32;
+  color: var(--welcome-para);
   font-family: Work Sans;
   font-size: 19.22px;
   font-style: normal;
@@ -38,7 +74,7 @@
 }
 
 .welcome .wave h1 {
-  color: #292d32;
+  color: var(--welcome-para);
   font-family: Work Sans;
   font-size: 38.44px;
   font-style: normal;
@@ -60,7 +96,7 @@
   align-items: center;
   gap: 10px;
   border-radius: 4px;
-  background: #d9d9d9;
+  background: var(--button-text);
   width: 100%;
   cursor: pointer;
 }
@@ -93,7 +129,7 @@ form .input-label input {
   align-items: center;
   gap: 10px;
   border-radius: 4px;
-  background: #d9d9d9;
+  background: var(--button-text);
   cursor: pointer;
 }
 .landing-content .btns {
@@ -108,7 +144,7 @@ form .input-label input {
   border-radius: 4px;
   background: #004bb0;
   border: none;
-  color: #d9d9d9;
+  color: var(--btn-text-color);
   text-align: center;
   font-family: Work Sans;
   font-size: 18.019px;
@@ -120,7 +156,7 @@ form .input-label input {
 }
 
 .landing-content .btns .start {
-  color: #d9d9d9;
+  color: var(--btn-text-color);
   background: #004bb0;
 }
 
@@ -201,6 +237,13 @@ form .input-label input {
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
+  }
+  .landing .mobile-nav .nav {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .mobile-nav .logo-name {

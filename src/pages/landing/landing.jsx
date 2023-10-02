@@ -5,10 +5,19 @@ import google from "../../assets/Google.png";
 import "./landing.css";
 import { NavLink } from "react-router-dom";
 import SideBar from "../../components/sidebar/sidebar";
+import dark from "../../assets/dark-mode.png";
+import useLocalStorage from "use-local-storage";
 
 const Landing = () => {
   const [isMobileView, setIsMobileView] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useLocalStorage(
+    "theme" ? "dark" : "light"
+  );
 
+  const switchTheme = () => {
+    const newTheme = isDarkMode === "light" ? "dark" : "light";
+    setIsDarkMode(newTheme);
+  };
   const handleResize = () => {
     if (window.innerWidth <= 500) {
       setIsMobileView(true);
@@ -22,7 +31,7 @@ const Landing = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
   return (
-    <div className="landing">
+    <div className="landing" data-theme={isDarkMode}>
       <div className="navbar">
         <SideBar />
       </div>
@@ -41,6 +50,9 @@ const Landing = () => {
                   </div>
                 </div>
               </div>
+            </div>
+            <div className="dark-mode">
+              <img src={dark} alt="dark mode" onClick={switchTheme} />
             </div>
           </div>
         </div>
